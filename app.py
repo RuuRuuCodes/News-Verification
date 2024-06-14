@@ -55,11 +55,11 @@ def data_preprocessing(text):
     return text
 
 
-count_vectorizer_path = r"C:\Users\OMOLADE\Desktop\Batch Jobs\To Do\News Verification with BERT\vectorizer.pkl"
+count_vectorizer_path = r"vectorizer.pkl"
 count_vectorizer = pickle.load(open(count_vectorizer_path, 'rb'))
 
 # Load the model from the HDF5 file
-model_path = r"C:\Users\OMOLADE\Desktop\Batch Jobs\To Do\News Verification with BERT\tf_model.h5"
+model_path = r"tf_model.h5"
 model = load_model(model_path)
 
 
